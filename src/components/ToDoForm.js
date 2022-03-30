@@ -27,6 +27,7 @@ export const ToDoForm = () => {
         }
 
         if (taskSelected) {
+            task.id = taskSelected.id
             dispatch(editTask(task))
             
         }else{
